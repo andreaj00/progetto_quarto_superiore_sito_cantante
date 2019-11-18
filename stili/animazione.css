@@ -1,0 +1,43 @@
+/*attributi base della tabella di concerti*/
+.tabAnimazione{
+	border-collapse: collapse;
+    width: 100%;
+	margin-bottom: 50px;
+}
+.tabAnimazione td,th,tr{
+	padding-left:10px;
+	padding-right:10px;
+
+}
+.tabAnimazione td,th{
+    text-align: center;
+}
+
+/*attributi base della stella*/
+.stella{
+    width: 50px;
+    height: 50px;
+	-webkit-transition: -webkit-transform 2s; /* Safari */
+    transition:  transform 2s;/*durata di trasform*/
+}
+
+/*quando deve girare*/
+.stella.animazione{
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+/*quando deve girare*/
+.stella.animazione2{
+    -webkit-transform: rotate(-360deg); /* Safari */
+    transform: rotate(-360deg);
+}
+
+/*la parte per cliccare e ti linka nel sito di bruno mars per comprare i biglietti*/
+.biglietti{
+	margin-right:auto;
+	margin-left:auto;
+	font-size:35px;
+	font-family:Impact, Charcoal, sans-serif;
+	border-top: 1px ridge black;
+}

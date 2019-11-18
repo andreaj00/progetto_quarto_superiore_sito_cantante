@@ -1,0 +1,36 @@
+/*la galleria */
+.galleria{
+	max-width:1000px;
+	max-height:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*rendo le immagini invisibili*/
+.mySlides {
+	display:none;
+}
+
+/*quando clicco sulla freccia o sui puntini */
+.sinistra{
+	cursor:pointer;
+	color:#b37700;
+	position: absolute;
+	margin-left:auto;
+	z-index:2;
+}
+.destra {
+	cursor:pointer;
+	color:#b37700;
+	position: absolute;
+	margin-left:73%;
+	z-index:2;
+}
+.bottone {
+	cursor:pointer;
+	color:#b37700;
+	position: absolute;
+}
+.bottone {
+	height:13px;width:13px;padding:0
+}

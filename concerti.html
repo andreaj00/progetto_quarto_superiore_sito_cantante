@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--caratteri usati-->
+<meta charset="UTF-8">
+<!--icona in alto vicino al titolo-->
+<link rel="icon" href="immagini/icona.ico" />
+<!--titolo-->
+<title>Bruno Mars</title>
+<!--fogli css da cui prendere informazioni-->
+<link rel="stylesheet" type="text/css" href="stili/stile.css">
+<link rel="stylesheet" type="text/css" href="stili/animazione.css">
+</head>
+
+<!--barra di navigazione-->
+<body>
+<div class = "menu">
+	<img class="alto" src="immagini/sopra.jpg" alt="immagine non trovata"/>
+	<ul class = "navigation" id="daRidimensionare">
+		<li><a class="home"  href="home.html">Home</a></li>
+		<li><a href="biografia.html">Biografia</a></li>
+		<li><a href="discografia.html">Discografia</a></li>
+		<li><a href="canzoni.html">Canzoni</a></li>
+		<li><a class="active">Concerti</a></li>
+		<li><a class="icon" onclick="ridimensiona()">&#9776;</a></li><!--3 lineette che compaiono quando la barra è tropppo piccola-->
+	</ul>
+</div>
+
+<div  id="contenuto" class="contenuto" style="overflow-x:auto;padding-bottom:0;">
+	
+	<p style="font-size:60%" align="right">per riordinare premi su "DATA","SPETTATORI" o "CITTA'"</p>
+	
+	<!--tabella con concerti piu famosi-->
+	<h2 class="oro"><center>ALCUNI DEI SUOI PIU' GRANDI CONCERTI</center></h2>
+	
+	
+	<table id="daOrdinare" class="tabAnimazione">
+		<tr class="oro" style="width:100%;">
+			<th style="padding-left:100px;"></th>
+			<th onclick="riordinaTabella(1)" style="cursor: pointer"><h3>DATA</h3></th>
+			<th onclick="riordinaTabella(2)" style="cursor: pointer"><h3>SPETTATORI</h3></th>
+			<th onclick="riordinaTabella(3)" style="cursor: pointer"><h3>CITTA'</h3></th>
+			<th style="padding-left:100px;"></th>
+		</tr>
+		<tr onmouseover="animazione(0)" onmouseout="fermaAnimazione(0)">
+			<td><img class="stella" id="stella0" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-03-28</td>
+			<td>28.262</td>
+			<td>Lille (FR)</td>
+			<td><img class="stella" id="0stella" src="immagini/stella.jpg"  alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(1)" onmouseout="fermaAnimazione(1)">
+			<td><img class="stella" id="stella1" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-03-24</td>
+			<td>22,356</td>
+			<td>Oslo (N)</td>
+			<td><img class="stella" id="1stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(2)" onmouseout="fermaAnimazione(2)">
+			<td><img class="stella" id="stella2" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-11-18</td>
+			<td>28.423</td>
+			<td>Rio de Janeiro (BR)</td>
+			<td><img class="stella" id="2stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(3)" onmouseout="fermaAnimazione(3)">
+			<td><img class="stella" id="stella3" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-11-22</td>
+			<td>41.719</td>
+			<td>São Paulo (BR)</td>
+			<td><img class="stella" id="3stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(4)" onmouseout="fermaAnimazione(4)">
+			<td><img class="stella" id="stella4" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-11-25</td>
+			<td>49.204</td>
+			<td>La Plata( RA)</td>
+			<td><img class="stella" id="4stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(5)" onmouseout="fermaAnimazione(5)">
+			<td><img class="stella" id="stella5" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-11-28</td>
+			<td>67,648</td>
+			<td>Santiago( RCH)</td>
+			<td><img class="stella" id="5stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(6)" onmouseout="fermaAnimazione(6)">
+			<td><img class="stella" id="stella6" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-11-30</td>
+			<td>41.493</td>
+			<td>Lima (PE)</td>
+			<td><img class="stella" id="6stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(7)" onmouseout="fermaAnimazione(7)">
+			<td><img class="stella" id="stella7" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-12-5</td>
+			<td>40.468</td>
+			<td>Bogotá (CO)</td>
+			<td><img class="stella" id="7stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(8)" onmouseout="fermaAnimazione(8)">
+			<td><img class="stella" id="stella8" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2017-12-7</td>
+			<td>38.052</td>
+			<td>San José( CR)</td>
+			<td><img class="stella" id="8stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+		<tr onmouseover="animazione(9)" onmouseout="fermaAnimazione(9)">
+			<td><img class="stella" id="stella9" src="immagini/stella.jpg" alt="stella"></td>
+			<td>2018-01-2</td>
+			<td>58.130</td>
+			<td>Mexico City (MEX)</td>
+			<td><img class="stella" id="9stella" src="immagini/stella.jpg" alt="stella"></td>
+		</tr>
+	</table>
+	
+	<!--parte per comprare i prossimi biglietti-->
+	<div class="biglietti">
+		<p><center>NON PERDERTI I SUOI PROSSIMI CONCERTI</center>
+		<a class="oro" href="http://www.brunomars.com/24kmagictour?ref=https://www.google.it/" target="_blank" title="guarda le sue prossime date del tour"><center>CLICCA QUI</center></a></p>
+	</div>
+</div>	
+
+
+<!--parte bassa con tutti i social di bruno mars-->
+<footer><center>
+	<span>Segui Bruno Mars su:</span>
+	<!--youtube-->
+	<span><a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/youtube.jpg" alt="youtube" title="youtube">
+	</a></span>
+	<!--spotify-->
+	<span><a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C#_=_" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+	</a></span>
+	<!--itunes-->
+	<span><a href="https://itunes.apple.com/it/artist/bruno-mars/278873078" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/itunes.jpg" alt="itunes" style="width:42px;height:42px;border:0" title="itunes">
+	</a></span>
+	<!--facebook-->
+	<span><a href="https://www.facebook.com/brunomars/" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/facebook.jpg" alt="facebook" style="width:42px;height:42px;border:0" title="facebook">
+	</a></span>
+	<!--twitter-->
+	<span><a href="https://twitter.com/brunomars" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/twitter.jpg" alt="twitter" title="twitter">
+	</a></span>
+	<!--instagram-->
+	<span><a href="https://www.instagram.com/brunomars/?hl=it" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/instagram.jpg" alt="instagram" style="width:42px;height:42px;border:0" title="instagram">
+	</a></span>
+</center></footer>
+
+<script>
+
+<!--funzione per far girare le stelle-->
+function animazione(n) {
+	n=n.toString();
+	var uni;
+	<!--calcolo la stella da far girare-->
+	uni="stella".concat(n);
+	uni=document.getElementById(uni).className+=" animazione";
+	uni=n.concat("stella");
+	uni=document.getElementById(uni).className+=" animazione2";
+}
+
+<!--funzione per far fermare le stelle-->
+function fermaAnimazione(n) {
+	n=n.toString();
+	var uni;
+	<!--calcolo la stella da fermare-->
+	uni="stella".concat(n);
+	uni=document.getElementById(uni).className="stella";
+	uni=n.concat("stella");
+	uni=document.getElementById(uni).className="stella";
+}
+
+<!--funzione per riordinare-->
+function riordinaTabella(n) {
+	var tabella, riga, scambio, i, x, y, daScambiare, dir, cont = 0;
+	<!--controllo usato per capire quel tabella riordinare-->
+	tabella = document.getElementById("daOrdinare");
+	scambio = true;
+	<!--lo imposto che lo deve riordinare in modo ascendente-->
+	dir = "asc"; 
+	<!--faccio un ciclo che continua finchè non cambio più nulla-->
+	while (scambio) {
+		scambio = false;
+		riga = tabella.getElementsByTagName("TR");
+		<!--ciclo in cerco se devo riordinare riordino-->
+		for (i = 1; i < (riga.length - 1); i++) {
+			daScambiare = false;
+			<!--acquisisco gli elementi a comparare-->
+			x = riga[i].getElementsByTagName("TD")[n];
+			y = riga[i+1].getElementsByTagName("TD")[n];
+			<!--vedo come deve essere riordinato-->
+			<!--ascendente-->
+			if (dir == "asc") {
+				<!--innerHTML funziona come '=' -->
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
+					daScambiare= true;
+					break;
+				}
+			<!--decrescente-->
+			} else if (dir == "desc") {
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()){
+					daScambiare= true;
+					break;
+				}
+			}
+		}
+		<!--controllo se devo scambiare-->
+		if (daScambiare) {
+			<!--scambio-->
+			riga[i].parentNode.insertBefore(riga[i+1], riga[i]);
+			scambio = true;
+			cont ++;      
+		} else {
+			<!--controllo se devo scambiare-->
+			if (cont == 0 && dir == "asc") {
+				dir = "desc";
+				scambio = true;
+			}
+		}
+	}
+}
+</script>
+
+<!--Usato per ridimensionare la barra di navigazione -->
+<script>
+function ridimensiona() {
+    var x = document.getElementById("daRidimensionare");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+</script>
+</body>
+</html>

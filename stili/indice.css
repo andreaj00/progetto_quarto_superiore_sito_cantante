@@ -1,0 +1,19 @@
+/*come appare l'inidice della biografia*/
+.indice{
+	width: 40%;
+	max-width: 400px;
+	border: 1px solid #a2a9b1;
+	border-radius: 25px;/*angoli smussati*/
+    background-color: #e6e6e6;
+	color:#b37700;/*colore oro*/
+    padding-left: 40px;
+    padding-bottom: 40px;
+	margin-left: 3%; 
+    font-size: 90%;
+	list-style-type: circle;/*puntini tondi*/
+}
+
+
+.contenuto{
+	word-break: break-all;/*le parole se troppo lunghe invece di superare il bordo vanno a capo*/
+}

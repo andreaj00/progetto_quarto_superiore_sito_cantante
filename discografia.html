@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--caratteri usati-->
+<meta charset="UTF-8">
+<!--icona in alto vicino al titolo-->
+<link rel="icon" href="immagini/icona.ico" />
+<!--titolo-->
+<title>Bruno Mars</title>
+<!--foglio css da cui prendere informazioni-->
+<link rel="stylesheet" type="text/css" href="stili/stile.css">
+<link rel="stylesheet" type="text/css" href="stili/album.css">
+</head>
+
+<!--barra di navigazione-->
+<body onload="scrolla()">
+<div class = "menu">
+	<img class="alto" src="immagini/sopra.jpg" alt="immagine non trovata"/>
+	<ul class = "navigation" id="daRidimensionare">
+		<li><a class="home" href="home.html">Home</a></li>
+		<li><a href="biografia.html#infanzia">Biografia</a></li>
+		<li><a class="active">Discografia</a></li>
+		<li><a href="canzoni.html">Canzoni</a></li>
+		<li><a href="concerti.html">Concerti</a></li>
+		<li><a class="icon" onclick="ridimensiona()">&#9776;</a></li><!--3 lineette che compaiono quando la barra è tropppo piccola-->
+	</ul>
+</div>
+<div class="contenuto">
+	<p style="font-size:60%" align="right">per riordinare premi su "ANNO","TITOLO","INDICE" o "COLLABORATORE"</p>
+		
+	
+	<center><h2 class="oro">TUTTE LE CANZONI DI BRUNO MARS</h2><center>
+	<div class="tab" >
+		<button class="tablinks" onclick="apri(event, 'Doo-Wops & Hooligans')" id="Doo-Wops & Hooligans2">
+			<img src="immagini/Doo-Wops & Hooligans.jpg" alt="Doo-Wops & Hooligans" class="disco">
+			<div class="overlay">
+				<div class="text">Doo-Wops & Hooligans (2010)</div>
+			</div>
+		</button>
+		<button class="tablinks" onclick="apri(event, 'Unorthodox Jukebox')" id="Unorthodox Jukebox2">
+			<img src="immagini/Unorthodox Jukebox.jpg" alt="Unorthodox Jukebox" class="disco">
+			<div class="overlay">
+				<div class="text">Unorthodox Jukebox (2012)</div>
+			</div>
+		</button>
+		<button class="tablinks" onclick="apri(event, '24K Magic')" id="24K Magic2">
+			<img src="immagini/24K Magic.jpg" alt="24K Magic Jukebox" class="disco">
+			<div class="overlay">
+				<div class="text">24K Magic (2016)</div>
+			</div>
+		</button>
+		<button class="tablinks" onclick="apri(event, 'Collaborazioni')" id="Collaborazioni2">
+			<img src="immagini/Collaborazioni.jpg" alt="Collaborazioni" class="disco">
+			<div class="overlay">
+				<div class="text">Collaborazioni</div>
+			</div>
+		</button>
+		<button class="tablinks" onclick="apri(event, 'Singoli')" id="Singoli2">
+			<img src="immagini/Singoli.jpg" alt="Singoli" class="disco">
+			<div class="overlay">
+				<div class="text">Singoli</div>
+			</div>
+		</button>
+	</div>
+	
+	
+	<!--parte con album Doo-Wops & Hooligans-->
+	<div id="Doo-Wops & Hooligans" class="tabcontent" >
+		<center><h2 class="oro">Doo-Wops & Hooligans (2010)</h2></center>
+		<table id="daOrdinare" class="tabella">
+			<!--prima riga con titoli della tabella-->
+			<tr class="oro">
+				<th onclick="riordinaTabella(0,'daOrdinare')" style="cursor: pointer"><h3>INDICE</h3></th>
+				<th onclick="riordinaTabella(1,'daOrdinare')" style="cursor: pointer"><h3>TITOLO</h3></th>
+				<th><h3>ASCOLTA</h3></th>
+				<th><h3>LINK</h3></th>
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Grenade">
+				<td >0.</td>
+				<td><p>Grenade</p></td> 
+				<td><audio controls>
+					<source src="musica/Grenade.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=SR6iYWJxHqs" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/4lLtanYk6tkMvooU0tWzG8" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Just the Way You Are">
+				<td>1.</td>
+				<td><p>Just the Way You Are</p></td> 
+				<td><audio controls>
+					<source src="musica/Just the Way You Are.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=LjhCEhWiKXk" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/47Slg6LuqLaX0VodpSCvPt" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Our First Time">
+				<td>2.</td>
+				<td><p>Our First Time</p></td> 
+				<td><audio controls>
+					<source src="musica/Our First Time.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=1VemnNSnzbU" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/4LjkHlY5qDz0hhFJJH5M7a" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Runaway Baby">
+				<td>3.</td>
+				<td><p>Runaway Baby</p></td> 
+				<td><audio controls>
+					<source src="musica/Runaway Baby.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=CbE_fVjHdCY" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/7hCNBVRhHzcsRAv0TQnOzq" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="The Lazy Song">
+				<td>4.</td>
+				<td><p>The Lazy Song</p></td> 
+				<td><audio controls>
+					<source src="musica/The Lazy Song.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=fLexgOxsZu0" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/386RUes7n1uM1yfzgeUuwp" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Marry You">
+				<td>5.</td>
+				<td><p>Marry You</p></td> 
+				<td><audio controls>
+					<source src="musica/Marry You.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=Zlv1rdcpS9M" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/6SKwQghsR8AISlxhcwyA9R" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Talking to the Moon">
+				<td>6.</td>
+				<td><p>Talking to the Moon</p></td> 
+				<td><audio controls>
+					<source src="musica/Talking to the Moon.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=-V1p6EqAEKc" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/1wVuPmvt6AWvTL5W2GJnzZ" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Liquor Store Blues">
+				<td>7.</td>
+				<td><p>Liquor Store Blues</p></td> 
+				<td><audio controls>
+					<source src="musica/Liquor Store Blues.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=1iBm60uJXvs" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/1ewMCmw7qCb5a9ttqiyemu" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Count On Me">
+				<td>8.</td>
+				<td><p>Count On Me</p></td> 
+				<td><audio controls>
+					<source src="musica/Count On Me.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=A-OxRox4Wvk" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/3B5UbSndRz907IZhhmUfLi" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="The Other Side">
+				<td>9.</td>
+				<td><p>The Other Side</p></td> 
+				<td><audio controls>
+					<source src="musica/The Other Side.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=m8Ed8in9Qng" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/78Z199FfQHt4VpnJzlYaIe" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+		</table>	
+	</div>
+	
+	<!--parte con album Unorthodox Jukebox-->
+	<div id="Unorthodox Jukebox" class="tabcontent">
+		<center><h2 class="oro">Unorthodox Jukebox (2012)</h2></center>
+		<table id="daOrdinare1" class="tabella">
+			<!--prima riga con titoli della tabella-->
+			<tr class="oro">
+				<th onclick="riordinaTabella(0,'daOrdinare1')" style="cursor: pointer"><h3>INDICE</h3></th>
+				<th onclick="riordinaTabella(1,'daOrdinare1')" style="cursor: pointer"><h3>TITOLO</h3></th>
+				<th><h3>ASCOLTA</h3></th>
+				<th><h3>LINK</h3></th>
+			</tr>
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Young Girls">
+				<td>0.</td>
+				<td><p>Young Girls</p></td> 
+				<td><audio controls>
+					<source src="musica/Young Girls.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=CyM5AjiZris" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/3G5iN5QBqMeXx3uZPy8tgB" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Locked Out of Heaven">
+				<td>1.</td>
+				<td><p>Locked Out of Heaven</p></td> 
+				<td><audio controls>
+					<source src="musica/Locked Out of Heaven.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=e-fA-gBCkj0" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/3w3y8KPTfNeOKPiqUTakBh" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Gorilla">
+				<td>2.</td>
+				<td><p>Gorilla</p></td> 
+				<td><audio controls>
+					<source src="musica/Gorilla.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=AHDtXqjgEj4" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/2ih2U8ttFzCjnQ5njF3SrR" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Treasure">
+				<td>3.</td>
+				<td><p>Treasure</p></td> 
+				<td><audio controls>
+					<source src="musica/Treasure.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=nPvuNsRccVw" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/55h7vJchibLdUkxdlX3fK7" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Moonshine">
+				<td>4.</td>
+				<td><p>Moonshine</p></td> 
+				<td><audio controls>
+					<source src="musica/Moonshine.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=a7yFkCMGrLY" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/30raivfq7rSt5nKltiHfzG" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="When I Was Your Man">
+				<td>5.</td>
+				<td><p>When I Was Your Man</p></td> 
+				<td><audio controls>
+					<source src="musica/When I Was Your Man.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=ekzHIouo8Q4" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/0nJW01T7XtvILxQgC5J7Wh" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Natalie">
+				<td>6.</td>
+				<td><p>Natalie</p></td> 
+				<td><audio controls>
+					<source src="musica/Natalie.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=-C3DpsLjoHQ" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/0inMKhbKWOTDA9UBUAKoU6" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Show Me">
+				<td>7.</td>
+				<td><p>Show Me</p></td> 
+				<td><audio controls>
+					<source src="musica/Show Me.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=RIpzCc7PAlA" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/2tCPIp83mRXvVTytTAf1W4" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Money Make Her Smile">
+				<td>8.</td>
+				<td><p>Money Make Her Smile</p></td> 
+				<td><audio controls>
+					<source src="musica/Money Make Her Smile.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=_czUZiTbwy0" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/6FPQabaldvKE5cjqRfY9Os" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="If I Knew">
+				<td>9.</td>
+				<td><p>If I Knew</p></td> 
+				<td><audio controls>
+					<source src="musica/If I Knew.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=9YZpng2PL34" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/7lXOqE38eCr979gp27O5wr" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+		</table>	
+	</div>
+	
+	<!--parte con album 24K Magic-->
+	<div id="24K Magic" class="tabcontent">
+		<h2 class="oro"><center>24K Magic (2016)<center></h2>
+		<table id="daOrdinare2" class="tabella">
+			<!--prima riga con titoli della tabella-->
+			<tr class="oro">
+				<th onclick="riordinaTabella(0,'daOrdinare2')" style="cursor: pointer"><h3>INDICE</h3></th>
+				<th onclick="riordinaTabella(1,'daOrdinare2')" style="cursor: pointer"><h3>TITOLO</h3></th>
+				<th><h3>ASCOLTA</h3></th>
+				<th><h3>LINK</h3></th>
+			</tr>
+		
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="24K Magic2">
+				<td>0.</td>
+				<td><p>24K Magic</p></td> 
+				<td><audio controls>
+					<source src="musica/24K Magic.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=UqyT8IEBkvY" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/2gFvRmQiWg9fN9i74Q0aiw" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Chunky">
+				<td>1.</td>
+				<td><p>Chunky</p></td> 
+				<td><audio controls>
+					<source src="musica/Chunky.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=oacaq_1TkMU" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/0mBKv9DkYfQHjdMcw2jdyI" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Perm">
+				<td>2.</td>
+				<td><p>Perm</p></td>  
+				<td><audio controls>
+					<source src="musica/Perm.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=ftXmvnL0ZOc" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/1I6pKIyaBp4OebTGLJpCCC" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="That's What I Like">
+				<td>3.</td>
+				<td><p>That's What I Like</p></td> 
+				<td><audio controls>
+					<source src="musica/That's What I Like.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=PMivT7MJ41M" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/0KKkJNfGyhkQ5aFogxQAPU" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Versace on the Floor">
+				<td>4.</td>
+				<td><p>Versace on the Floor</p></td> 
+				<td><audio controls>
+					<source src="musica/Versace on the Floor.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=-FyjEnoIgTM" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/3trg82Eql6tqi2EAxluhy8" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Straight Up & Down">
+				<td>5.</td>
+				<td><p>Straight Up & Down</p></td> 
+				<td><audio controls>
+					<source src="musica/Straight Up & Down.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=jZ6DR3GuU_w" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/2mrZYZGmPFV3QOyYPZ1zsn" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Calling All My Lovelies">
+				<td>6.</td>
+				<td><p>Calling All My Lovelies</p></td> 
+				<td><audio controls>
+					<source src="musica/Calling All My Lovelies.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=43l4rFPgIak" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/6ObpR8ek44tvWefQRcSo8K" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Finesse">
+				<td>7.</td>
+				<td><p>Finesse</p></td> 
+				<td><audio controls>
+					<source src="musica/Finesse.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=MRSaiAREnwI" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/5XMkENs3GfeRza8MfVAhjK" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Too Good to Say Goodbye">
+				<td>8.</td>
+				<td><p>Too Good to Say Goodbye</p></td> 
+				<td><audio controls>
+					<source src="musica/Too Good to Say Goodbye.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=_mNNqpn5gQ8" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/0B0tYbVp7pDQAqKDhgMeaL" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+		</table>	
+	</div>
+	
+	<!--parte con le canzoni cantate come collaboratore-->
+	<div id="Collaborazioni" class="tabcontent">
+		<center><h2 class="oro">Collaborazioni</h2></center>
+		<table id="daOrdinare3" class="tabella">
+			<!--prima riga con titoli della tabella-->
+			<tr class="oro">
+				<th onclick="riordinaTabella(0,'daOrdinare3')" style="cursor: pointer"><h3>ANNO</h3></th>
+				<th onclick="riordinaTabella(1,'daOrdinare3')" style="cursor: pointer"><h3>TITOLO</h3></th>
+				<th onclick="riordinaTabella(2,'daOrdinare3')" style="cursor: pointer"><h3>COLLABORATORE</h3></th>
+				<th><h3>ASCOLTA</h3></th>
+				<th><h3>LINK</h3></th>
+			</tr>
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Nothin' on You">
+				<td >2010</td>
+				<td><p>Nothin' on You</p></td> 
+				<td><p>B.o.B</p></td> 
+				<td><audio controls>
+					<source src="musica/Nothin' on You.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=8PTDv_szmL0" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/59dLtGBS26x7kc0rHbaPrq" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Billionaire">
+				<td >2010</td>
+				<td><p>Billionaire</p></td> 
+				<td><p>Travie McCoy</p></td> 
+				<td><audio controls>
+					<source src="musica/Billionaire.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=8aRor905cCw" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/2M9ULmQwTaTGmAdXaXpfz5" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Lighters">
+				<td >2011</td>
+				<td><p>Lighters</p></td> 
+				<td><p>Bad Meets Evil</p></td> 
+				<td><audio controls>
+					<source src="musica/Lighters.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=YWt4wmZ_EMI" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/4BWBbJ9MKpnt30SFYEomzJ" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Young, Wild & Free">
+				<td >2011</td>
+				<td><p>Young, Wild & Free</p></td> 
+				<td><p>Snoop Dogg & Wiz Khalifa</p></td> 
+				<td><audio controls>
+					<source src="musica/Young, Wild & Free.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=Wa5B22KAkEk" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/5HQVUIKwCEXpe7JIHyY734" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Mirror">
+				<td >2011</td>
+				<td><p>Mirror</p></td> 
+				<td><p>Lil Wayne</p></td> 
+				<td><audio controls>
+					<source src="musica/Mirror.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=OZLUa8JUR18" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/1JU4OCCt18SWuwUM7GxGsB" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Bubble Butt">
+				<td >2013</td>
+				<td><p>Bubble Butt</p></td> 
+				<td><p>Major Lazer, 2 Chainz, Tyga & Mystic</p></td> 
+				<td><audio controls>
+					<source src="musica/Bubble Butt.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=wO89_H7GqaQ" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/4c6VawXYt3pqJdvWCT0tBs" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+			
+			<!--riga della tabella con anno,titolo,album, link per ascoltarlo e modo per ascoltarlo direttamente-->
+			<tr id="Uptown Funk">
+				<td >2014</td>
+				<td><p>Uptown Funk</p></td> 
+				<td><p>Mark Ronson</p></td> 
+				<td><audio controls>
+					<source src="musica/Uptown Funk.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" target="_blank" style="text-decoration:none;">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0" title="youtube">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+		</table>	
+	</div>
+	
+	<!--parte con i singoli che non sono dentro nessun album-->
+	<div id="Singoli" class="tabcontent">
+		<center><h2 class="oro">Singoli</h2></center>
+		<table id="daOrdinare5" class="tabella">
+			<!--prima riga con titoli della tabella-->
+			<tr class="oro">
+				<th onclick="riordinaTabella(0,'daOrdinare5')" style="cursor: pointer"><h3>ANNO</h3></th>
+				<th onclick="riordinaTabella(1,'daOrdinare5')" style="cursor: pointer"><h3>TITOLO</h3></th>
+				<th><h3>ASCOLTA</h3></th>
+				<th><h3>LINK</h3></th>
+			</tr>
+			
+			<!--singolo-->
+			<tr id="It Will Rain">
+				<td>2011</td>
+				<td><p>It Will Rain</p></td> 
+				<td><audio controls>
+					<source src="musica/It Will Rain.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio></td> 
+				<td>
+					<!--youtube-->
+					<a href="https://www.youtube.com/watch?v=W-w3WfgpcGg" target="_blank" style="text-decoration:none;" title="youtube">
+						<img src="immagini/youtube.jpg" alt="youtube" style="width:42px;height:42px;border:0">
+					</a>
+					<!--spotify-->
+					<a href="https://open.spotify.com/track/0M3HkE321xpCbCYqVKzr1q" target="_blank">
+						<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+					</a>
+				</td> 
+			</tr>
+		</table>	
+	</div>
+		
+</div>
+
+
+<!--parte bassa con tutti i social di bruno mars-->
+<footer><center>
+	<span>Segui Bruno Mars su:</span>
+	<!--youtube-->
+	<span><a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/youtube.jpg" alt="youtube" title="youtube">
+	</a></span>
+	<!--spotify-->
+	<span><a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C#_=_" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+	</a></span>
+	<!--itunes-->
+	<span><a href="https://itunes.apple.com/it/artist/bruno-mars/278873078" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/itunes.jpg" alt="itunes" style="width:42px;height:42px;border:0" title="itunes">
+	</a></span>
+	<!--facebook-->
+	<span><a href="https://www.facebook.com/brunomars/" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/facebook.jpg" alt="facebook" style="width:42px;height:42px;border:0" title="facebook">
+	</a></span>
+	<!--twitter-->
+	<span><a href="https://twitter.com/brunomars" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/twitter.jpg" alt="twitter" title="twitter">
+	</a></span>
+	<!--instagram-->
+	<span><a href="https://www.instagram.com/brunomars/?hl=it" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/instagram.jpg" alt="instagram" style="width:42px;height:42px;border:0" title="instagram">
+	</a></span>
+</center></footer>
+<script>
+// apro di default il primo tab (Doo-Wops & Hooligans)
+
+<!--scollo nella giusta posizione(sottraendo i 250 px dell'altezza del menu) anche quando richiamo questa pagina da altre pagine-->
+function scrolla(){
+	var url = document.URL;
+	if(url.includes("#")){
+		<!--prendo l'id selezionato, html usa per gli spazi %20 quindi lo cambio-->
+		<!--pop preleva l'ultimo elemento di un array-->
+		var id = url.split("#").pop().replace(/%20/g, " ");
+		<!--dopo il $ è l'album-->
+		var id1=id.split("$").pop()+2;
+		document.getElementById(id1).click();
+		<!--la prima parte è la canzone-->
+		<!--shift preleva il primo elemento di un array-->
+		id1=id.split("$").shift();
+		
+		<!--prendo la posizione dell'elemento -->
+		window.scrollTo(0, 0);
+		var element = document.getElementById(id1);
+		var rect = element.getBoundingClientRect();
+		var TheTop = rect.top;
+		<!--scrollo (250 è l'altezza della barra di navigazione)-->
+		window.scrollTo(0, TheTop-250);
+	}
+	else{
+		document.getElementById("Doo-Wops & Hooligans2").click();
+	}
+}
+
+<!--funzione per gestire il tab da aprire-->
+function apri(evt, album) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(album).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
+<!--funzione per riordinare-->
+function riordinaTabella(n,id) {
+	var tabella, riga, scambio, i, x, y, daScambiare, dir, cont = 0;
+	<!--controllo usato per capire quel tabella riordinare-->
+	tabella = document.getElementById(id);
+	scambio = true;
+	<!--lo imposto che lo deve riordinare in modo ascendente-->
+	dir = "asc"; 
+	<!--faccio un ciclo che continua finchè non cambio più nulla-->
+	while (scambio) {
+		scambio = false;
+		riga = tabella.getElementsByTagName("TR");
+		<!--ciclo in cerco se devo riordinare riordino-->
+		for (i = 1; i < (riga.length - 1); i++) {
+			daScambiare = false;
+			<!--acquisisco gli elementi a comparare-->
+			x = riga[i].getElementsByTagName("TD")[n];
+			y = riga[i+1].getElementsByTagName("TD")[n];
+			<!--vedo come deve essere riordinato-->
+			<!--ascendente-->
+			if (dir == "asc") {
+				<!--innerHTML funziona come '=' -->
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
+					daScambiare= true;
+					break;
+				}
+			<!--decrescente-->
+			} else if (dir == "desc") {
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()){
+					daScambiare= true;
+					break;
+				}
+			}
+		}
+		<!--controllo se devo scambiare-->
+		if (daScambiare) {
+			<!--scambio-->
+			riga[i].parentNode.insertBefore(riga[i+1], riga[i]);
+			scambio = true;
+			cont ++;      
+		} else {
+			<!--controllo se devo scambiare-->
+			if (cont == 0 && dir == "asc") {
+				dir = "desc";
+				scambio = true;
+			}
+		}
+	}
+}
+</script>
+
+
+<!--Usato per ridimensionare la barra di navigazione -->
+<script>
+function ridimensiona() {
+    var x = document.getElementById("daRidimensionare");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+</script>
+</body>
+</html>

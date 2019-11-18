@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--caratteri usati-->
+<meta charset="UTF-8">
+<!--icona in alto vicino al titolo-->
+<link rel="icon" href="immagini/icona.ico" />
+<!--titolo-->
+<title>Bruno Mars</title>
+<!--fogli css da cui prendere informazioni-->
+<link rel="stylesheet" type="text/css" href="stili/stile.css">
+<link rel="stylesheet" type="text/css" href="stili/slider.css">
+<link rel="stylesheet" type="text/css" href="stili/formattazione.css">
+<link rel="stylesheet" type="text/css" href="stili/according.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link da cui prendo l'icona-->
+</head>
+
+<!--barra di navigazione-->
+<body>
+<div class = "menu">
+	<img class="alto" src="immagini/sopra.jpg" alt="immagine non trovata"/>
+	<ul class = "navigation" id="daRidimensionare">
+		<li><a class="home" href="home.html">Home</a></li>
+		<li><a href="biografia.html">Biografia</a></li>
+		<li><a href="discografia.html">Discografia</a></li>
+		<li><a class="active">Canzoni</a></li>
+		<li><a href="concerti.html">Concerti</a></li>
+		<li><a class="icon" onclick="ridimensiona()">&#9776;</a></li><!--3 lineette che compaiono quando la barra è tropppo piccola-->
+	</ul>
+</div>
+<!--per la personalizzazione del testo-->
+	<div id="sinistra" class="sinistra">
+		Personalizza la formattazione
+		<p>Scegli il testo da formattare:
+			<!--combobox pee scegliere il testo da cambiare-->
+			<select id="canzone" onchange="cambiaFormato()" style="height:25px">
+				<option value="Just The Way You Are">Just The Way You Are</option>
+				<option value="When I Was Your Man">When I Was Your Man</option>
+				<option value="Too Good To Say Goodbye">Too Good To Say Goodbye</option>
+				<option value="24k magic">24k magic</option>
+			</select>
+			<!--3 slider per cambiare il color rgb-->
+			<br>Colore: 
+			<br>R
+			<input class="slider" type="range" min="0" max="255" value="0" id="slideR" onchange="cambiaFormato()">
+			<br>G
+			<input class="slider" type="range" min="0" max="255" value="0" id="slideG" onchange="cambiaFormato()">
+			<br>B
+			<input class="slider" type="range" min="0" max="255" value="0" id="slideB" onchange="cambiaFormato()">
+			<br>
+			<!--slider per cambiare la dimensione del testo-->
+			Dimensione: 
+			<input class="slider" type="range" min="15" max="50" value="28" id="dimensione" onchange="cambiaFormato()">
+			<br>
+			<!--combobox per cambiare il font del testo-->
+			Font: 
+			<select id="font" onchange="cambiaFormato()" style="height:25px">
+				<option value="Times New Roman">Times New Roman</option>
+				<option value="Arial">Arial</option>
+				<option value="Verdana ">Verdana </option>
+				<option value="Georgia ">Georgia </option>
+			</select>
+		</p>
+	</div>
+	
+	<!--icona presa da w3school usata per rimpicciolire la parte della formattazione-->
+	<div id="rimpicciolisci" class="rimpicciolisci" onclick="rimpicciolisci()" >
+		<i class="fa fa-caret-left" style="font-size:60px;color:gray"></i>
+	</div>
+	<!--icona presa da w3school usata per ingrandire la parte della formattazione-->
+	<div id="ingrandisci" class="ingrandisci" onclick="ingrandisci()">
+		<i class="fa fa-caret-right" style="font-size:60px;color:gray"></i>
+	</div>
+	
+
+<div id="contenuto" class="contenuto" style=" height:100%; min-height:750px;">
+	
+	<!--titolo-->
+	<center><h2 class="oro" style="margin-top:0px;padding-top:40px;">I TESTI DELLE MIGLIORI CANZONI</h2></center>
+	
+	<!--testo-->
+	
+	<button class="accordion">Just The Way You Are</button>
+	<div  class="testo">
+		<p id="Just The Way You Are" align="center">
+		
+			Oh her eyes her eyes 
+			<br>Make the stars look like they're not shining. 
+			<br>Her hair , her hair 
+			<br>falls perfectly without her trying 
+			<br>
+			<br>She's so beautiful and I tell her every day <br>
+			<br>I know, I know 
+			<br>When I compliment her she wont believe me 
+			<br>And it's so, it's so 
+			<br>Sad to think she don't see what I see 
+			<br>
+			<br>But every time she asks me 'Do I look okay?' I say 
+			<br>
+			<br>When I see your face 
+			<br>There's not a thing that I would change 
+			<br>Cause you're amazing 
+			<br>Just the way you are 
+			<br>
+			<br>And when you smile 
+			<br>The whole world stops and stares for a while 
+			<br>'Cause girl you're amazing 
+			<br>Just the way you are 
+			<br>
+			<br>Her lips, her lips 
+			<br>I could kiss them all day if she'd let me 
+			<br>
+			<br>Her laugh, Her laugh 
+			<br>She hates but I think it's so sexy 
+			<br>
+			<br>She's so beautiful and i tell her every day 
+			<br>
+			<br>Oh you know, you know, you know I'd never ask you to change 
+			<br>If perfect is what you're searching for 
+			<br>Then just stay the same 
+			<br>
+			<br>So don't even bother asking if you look okay 
+			<br>You know I say 
+			<br>
+			<br>When I see your face 
+			<br>There's not a thing that I would change
+			<br>Cause you're amazing 
+			<br>Just the way you are 
+			<br>
+			<br>And when you smile 
+			<br>The whole world stops and stares for a while 
+			<br>'Cause girl you're amazing 
+			<br>just the way you are 
+			<br>
+			<br>The way you are 
+			<br>The way you are 
+			<br>Girl you're amazing 
+			<br>Just the way you are
+			<br>
+			<br>When I see your face 
+			<br>There's not a thing that I would change 
+			<br>'Cause you're amazing 
+			<br>Just the way you are 
+			<br>
+			<br>And when you smile 
+			<br>The whole world stops and stares for a while 
+			<br>'Cause girl you're amazing 
+			<br>Just the way you are 
+			<br>
+			<br>Yeaaaah
+		</p>
+	</div>
+	
+	<!--testo-->
+	<button class="accordion">When I Was Your Man</button>
+	<div  class="testo">
+		<p id="When I Was Your Man" align="center">
+			Same bed, but it feels just a little bit bigger now
+			<br>Our song on the radio, but it don't sound the same
+			<br>When our friends talk about you all that it does is just tear me down
+			<br>Cause my heart breaks a little when I hear your name
+			<br>And it all just sounds like uh, uh, uh
+			<br>
+			<br>Hmmm too young, too dumb to realize
+			<br>That I should have bought you flowers and held your hand
+			<br>Should have gave you all my hours when I had the chance
+			<br>Take you to every party cause all you wanted to do was dance
+			<br>Now my baby is dancing, but she's dancing with another man.
+			<br>
+			<br>My pride, my ego, my needs and my selfish ways
+			<br>Caused a good strong woman like you to walk out my life
+			<br>Now I never, never get to clean up the mess I made
+			<br>And that hunts me every time I close my eyes
+			<br>It all just sounds like uh, uh, uh, uh
+			<br>
+			<br>Too young, too dumb to realize
+			<br>That I should have bought you flowers and held your hand
+			<br>Should have gave all my hours when I had the chance
+			<br>Take you to every party cause all you wanted to do was dance
+			<br>Now my baby is dancing, but she's dancing with another man.
+			<br>
+			<br>Although it hurts I'll be the first to say that I was wrong
+			<br>Oh, I know I'm probably much too late
+			<br>To try and apologize for my mistakes
+			<br>But I just want you to know
+			<br>I hope he buys you flowers, I hope he holds your hand
+			<br>Give you all his hours when he has the chance
+			<br>Take you to every party cause I remember how much you loved to dance
+			<br>Do all the things I should have done when I was your man!
+			<br>Do all the things I should have done when I was your man!
+		</p>
+	</div>
+	
+	<!--testo-->
+	<button class="accordion">Too Good To Say Goodbye</button>
+	<div  class="testo">
+		<p id="Too Good To Say Goodbye" align="center">
+			I've made mistakes
+			<br>I could have treated you better
+			<br>I let you get away
+			<br>There goes my happily ever after
+			<br>
+			<br>Tell me why, why can't we try and start again?
+			<br>This can't be how our story ends
+			<br>You're more than my girl, you're my best friend
+			<br>Tell me you remember when, ooh
+			<br>I was your man and you were my girl
+			<br>It was you and me against the world, baby
+			<br>
+			<br>Ain't nobody gonna love me like the way you do
+			<br>And you ain't never gonna find a love like mine
+			<br>Tell me, what can I do to make it up to you?
+			<br>'Cause what we got's too good to say goodbye, goodbye
+			<br>
+			<br>Yeah, I'm still in love with you darlin'
+			<br>I know you feel the same, oh
+			<br>What's the point of both of us being broken hearted?
+			<br>I pray it's never too late
+			<br>
+			<br>So tell me why, why can't we try and start again?
+			<br>This can't be how our story ends
+			<br>You're more than my girl, you're my best friend
+			<br>Tell me you remember when
+			<br>I was your man and you were my girl
+			<br>It was you and me against the world, baby
+			<br>
+			<br>Ain't nobody gonna love me like the way you do
+			<br>And you ain't never gonna find a love like mine
+			<br>Tell me, what can I do to make it up to you?
+			<br>'Cause what we got's too good to say goodbye, goodbye
+			<br>
+			<br>(Oh, don't you give up) girl won't you listen?
+			<br>(Don't you give up) it's you that I'm missin'
+			<br>(Don't you give up) take my hand, <br>I wanna go, I wanna go (all the way)
+			<br>If we're gonna fight this fight for better days
+			<br>I know we're gonna make it
+			<br>This is the chance, let's take it, baby
+			<br>
+			<br>Ain't nobody gonna love me like the way you do (no, no, no)
+			<br>And you ain't never gonna find a love like mine (oh, tell me)
+			<br>What can I do to make it up to you?
+			<br>'Cause what we got's too good to say goodbye (come on, come on, come on) <br>Goodbye (oh baby, baby)
+			<br>
+			<br>Ain't nobody gonna love me like the way you do (nobody baby)
+			<br>And you ain't never gonna find a love like mine (oh, tell me)
+			<br>What can I do to make it up to you?
+			<br>'Cause what we got's too good to say goodbye, goodbye
+		</p>
+	</div>
+	
+	<!--testo-->
+	<button class="accordion">24k magic</button>
+	<div  class="testo">
+		<p id="24k magic" align="center">
+			Tonight
+			<br>I just want to take you higher
+			<br>Throw your hands up in the sky
+			<br>Let's set this party off right
+			<br>
+			<br>
+			Players, put yo' pinky rings up to the moon
+			<br>Girls, what y'all trying to do?
+			<br>24 karat magic in the air
+			<br>Head to toe soul player
+			<br>Uh, look out!
+			<br>
+			<br>Pop pop, it's show time (Show time)
+			<br>Show time (Show time)
+			<br>Guess who's back again?
+			<br>Oh they don't know? (Go on tell 'em)
+			<br>Oh they don't know? (Go on tell 'em)
+			<br>I bet they know as soon as we walk in (Showin' up)
+			<br>Wearing Cuban links (ya)
+			<br>Designer minks (ya)
+			<br>Inglewood's finest shoes (Whoop, whoop)
+			<br>Don't look too hard
+			<br>Might hurt ya'self
+			<br>Known to give the color red the blues
+			<br>
+			<br>Ooh shit, I'm a dangerous man with some money in my pocket
+			<br>(Keep up)
+			<br>So many pretty girls around me and they waking up the rocket
+			<br>(Keep up)
+			<br>Why you mad? Fix ya face
+			<br>Ain't my fault that y'all be jocking
+			<br>(Keep up)
+			<br>
+			<br>Players only, come on
+			<br>Put your pinky rings up to the moon
+			<br>Girls, what y'all trying to do?
+			<br>24 karat magic in the air
+			<br>Head to toe soul player
+			<br>Uh, look out!
+			<br>
+			<br>Second verse for the hustlas (hustlas)
+			<br>Gangstas (gangstas)
+			<br>Bad bitches and ya ugly ass friends (Haha)
+			<br>Can I preach? (Uh oh) Can I preach? (Uh oh)
+			<br>I gotta show 'em how a pimp get it in
+			<br>First, take your sip (sip), do your dip (dip)
+			<br>Spend your money like money ain't shit (Whoop, whoop)
+			<br>We too fresh
+			<br>Got to blame in on Jesus
+			<br>Hashtag blessed
+			<br>They ain't ready for me, ah
+			<br>
+			<br>I'm a dangerous man with some money in my pocket
+			<br>(Keep up)
+			<br>So many pretty girls around me and they waking up the rocket
+			<br>(Keep up)
+			<br>Why you mad? Fix ya face
+			<br>Ain't my fault that y'all be jocking
+			<br>(Keep up)
+			<br>
+			<br>Players only, come on
+			<br>Put your pinky rings up to the moon
+			<br>Hey girls
+			<br>What y'all trying to do? (what y'all trying to do?)
+			<br>24 karat magic in the air
+			<br>Head to toe soul player
+			<br>Uh, look out!
+			<br>
+			<br>(Wooh)
+			<br>Everywhere I go they be like
+			<br>Ooh, soul player ooh
+			<br>Everywhere I go they be like
+			<br>Ooh, soul player ooh
+			<br>Everywhere I go they be like
+			<br>Ooh, soul player ooh
+			<br>Now, now, now, now
+			<br>Watch me break it down like (Uh)
+			<br>24 karat, (woah) 24 karat magic
+			<br>What's that sound?
+			<br>24 karat, 24 karat magic
+			<br>Come on now
+			<br>24 karat, 24 karat magic
+			<br>Don't fight the feeling
+			<br>Invite the feeling
+			<br>
+			<br>Just put your pinky rings up to the moon
+			<br>Girls, what y'all trying to do? (tell me what y'all trying to do)
+			<br>24 karat magic in the air
+			<br>Head to toe soul player
+			<br>Put your pinky rings up to the moon
+			<br>Girls, what y'all trying to do? (Do)
+			<br>24 karat magic in the air
+			<br>Head to toe soul player
+			<br>(24 karat)
+			<br>Uh, look out
+			<br>
+			<br>(24 karat magic, magic, magic)
+		</p>
+	</div>
+	
+</div>
+
+
+<!--parte bassa con tutti i social di bruno mars-->
+<footer><center>
+	<span>Segui Bruno Mars su:</span>
+	<!--youtube-->
+	<span><a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/youtube.jpg" alt="youtube" title="youtube">
+	</a></span>
+	<!--spotify-->
+	<span><a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C#_=_" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+	</a></span>
+	<!--itunes-->
+	<span><a href="https://itunes.apple.com/it/artist/bruno-mars/278873078" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/itunes.jpg" alt="itunes" style="width:42px;height:42px;border:0" title="itunes">
+	</a></span>
+	<!--facebook-->
+	<span><a href="https://www.facebook.com/brunomars/" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/facebook.jpg" alt="facebook" style="width:42px;height:42px;border:0" title="facebook">
+	</a></span>
+	<!--twitter-->
+	<span><a href="https://twitter.com/brunomars" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/twitter.jpg" alt="twitter" title="twitter">
+	</a></span>
+	<!--instagram-->
+	<span><a href="https://www.instagram.com/brunomars/?hl=it" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/instagram.jpg" alt="instagram" style="width:42px;height:42px;border:0" title="instagram">
+	</a></span>
+</center></footer>
+
+<!--parte in javaScript-->
+<script>
+<!--per gestire l'according-->
+var acc = document.getElementsByClassName("accordion");
+
+
+<!--do a tutti quelli che hanno la classe accordion un event listener-->
+for (var i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		var panel = this.nextElementSibling;<!--restituisce l'elemento successivo-->
+		if (panel.style.maxHeight){
+			<!--quando è aperto lo chiudo-->
+			panel.style.maxHeight = null;
+			this.classList.remove("aperto");
+		} 
+		else {
+			<!--quando è chiuso lo apro-->
+			<!--ma prima chiudo tutti quelli aperti-->
+			for(var j=0; j<acc.length;j++){
+				acc[j].nextElementSibling.style.maxHeight = null;
+				acc[j].classList.remove("aperto");
+			}
+			<!--lo apro-->
+			<!--se la grandezza massima del testo era 0 (messa nel css) gli dico che è quella del pannello senza limitazioni compresi i border-->
+			panel.style.maxHeight = panel.scrollHeight + "px"; 
+			<!--la classe diventa anche aperto->
+			this.classList.add("aperto");
+			<!--scrollo ad altezza 100 dove inizia l'accordion -->
+			window.scrollTo(0,100)
+		} 
+	});
+}
+
+<!--modifica il formato del testo-->
+function cambiaFormato() {
+    var testo,r,g,b,font,dimension;
+	<!--acquisizioned el testo da formattare-->
+	testo = document.getElementById("canzone").value;
+	<!--acquisisco il rosso verde e blu da gli slider-->
+	r = document.getElementById("slideR").value;
+	g = document.getElementById("slideG").value;
+	b = document.getElementById("slideB").value;
+	<!--setto il colore-->
+    document.getElementById(testo).style.color  = "rgb("+r+","+g+","+b+")";
+	<!--setto il font-->
+	document.getElementById(testo).style.fontFamily = document.getElementById("font").value;
+	<!--setto la dimensione-->
+	document.getElementById(testo).style.fontSize = document.getElementById("dimensione").value.toString()+"px";
+}
+
+<!--fa scomparire la parte destra per la formattazione del testo-->
+function rimpicciolisci() {
+	document.getElementById("sinistra").style.display = "none";
+	document.getElementById("contenuto").style.margin = "0";
+	document.getElementById("rimpicciolisci").style.display = "none";
+	document.getElementById("ingrandisci").style.display = "block";
+}
+
+<!--fa comparire la parte destra per la formattazione del testo-->
+function ingrandisci() {
+	document.getElementById("sinistra").style.display = "block";
+	document.getElementById("contenuto").style.marginLeft="222px";
+	document.getElementById("rimpicciolisci").style.display = "block";
+	document.getElementById("ingrandisci").style.display = "none";
+}
+
+<!--Usato per ridimensionare la barra di navigazione -->
+function ridimensiona() {
+    var x = document.getElementById("daRidimensionare");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+</script>
+</body>
+</html>

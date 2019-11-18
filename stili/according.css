@@ -1,0 +1,55 @@
+.accordion {
+    background-color: #e6e6e6;
+    color: #b37700;/*colore oro*/
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;/*mi scomparire una linea blu che altrimenti sarebbe brutto*/
+    font-size: 28px;
+    transition: 0.4s;
+	border:1px solid silver;
+}
+
+/*quando è aperto*/
+.aperto{
+    background-color: #b3b3b3;/*colore griggio scuro*/
+}
+/*quando ci passo sopra*/
+.accordion:hover {
+    background-color: #b3b3b3;/*colore griggio scuro*/
+}
+
+/*la parte dopo la classe accordion è il simbolo in alto a destra(la freccia)*/
+.accordion:after {
+    content: '\25BC';/*freccia in basso*/
+    color: #b37700;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.aperto:after {
+    content: "\25B2";/*freccia in alto*/
+}
+
+.testo {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-height: 0;/*gli dico che possono anche essere minuscoli*/
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*come appaiono i link*/
+.link{
+	color:  #000000;/*colore nero*/
+	text-decoration: none;
+}
+
+/*quando un link dell'indice gli viene passato sopra il mouse*/
+.link:hover{
+	color:  #990000;/*diventa bordeaux*/
+	text-decoration: underline;
+	cursor: pointer;/*il mouse diventa la manina*/
+}

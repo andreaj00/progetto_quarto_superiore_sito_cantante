@@ -1,0 +1,94 @@
+/*faccio diventare la copertina del disco come un disco*/
+.disco{
+	width: 100%;
+	height:100%;
+	max-width:595px;
+	max-height:360px;
+    -moz-border-radius: 100%; /*mozilla*/
+    -webkit-border-radius:100%;/*safari*/
+    border-radius: 100%;
+	display: block;
+}
+
+/*tabella delle canzoni*/
+.tabella{
+	max-width:1150px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+	margin:0;
+	padding:0;
+    border-radius: 50px 50px 0 0;
+}
+
+/* caratteristiche bottone */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 28px;
+	width:20%;
+}
+
+/* sfondo dietro al disco */
+.tab button.active {
+    background: linear-gradient(#666666, silver);/* faccio uno sfondo graduale */
+}
+
+/* contenuto del tab */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+	margin-top:-1px;/*cera un px di spazio e l'ho cancellato*/
+    border-top: none;
+    background: linear-gradient(silver, white); /* faccio uno sfondo graduale */
+	overflow-x:auto;/*non fa superare il limite*/
+}
+
+/*il bottone con il disco*/
+.tablinks {
+	position: relative;
+	width: 100%;
+}
+
+/*il div dove dentro c'è il disco*/
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;/*tempo apparizione scritta*/
+	background: linear-gradient(#666666, silver);/* faccio uno sfondo graduale */
+}
+
+/*faccio apparire il testo quando ci passa sopra con il mouse*/
+.tablinks:not(.active):hover .overlay {
+	opacity: 1;
+}
+
+/*caratteristiche del desto dentro tablink*/
+.text {
+	color: #b37700; /*scritta d'oro*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);/*mozilla*/
+	text-align: center;
+}
+

@@ -1,0 +1,173 @@
+.menu{ 
+	background-color: white;
+	width: 100%;
+	margin-right: auto;    
+    margin-left: auto; 
+    padding:0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/*ombra*/
+	z-index: 100;/*se scrollo le cose passano sotto*/
+	
+	top:0;
+    position: -webkit-sticky;/*safari*/
+    position: sticky; /*per far rimanere il menu sempre in alto anche quando si scorre*/
+	
+}
+
+.alto{
+	width: 658px;
+    display: block;
+	margin-right: auto;    
+    margin-left: auto; 
+    padding: 0;
+}
+
+
+.navigation {
+    list-style-type: none;/*nessuna punto o quadrato che indica che fa parte di una lista*/
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;/*sfondo bianco*/
+	margin: auto;  
+	width: 658px; 
+}
+
+.navigation li a {
+    display: block;
+    color: #b37700; /*scritta d'oro*/
+    text-align: center;
+    padding: 14px 16px;/*top-bottom e right-left*/
+    text-decoration: none;
+    float: left; /*la barra di navigazione parte da sinistra*/
+}
+
+.navigation li a:not(.active):hover {/*cambia il colore ella barra tranne di quello selezionato*/
+    background-color: #b37700;/*sfondo oro*/
+	color:  #ffffff;/*scritta bianca*/
+	font-style: italic;
+}
+
+/*quando la barra di navigazione è attiva*/
+.active {
+    background-color: #d9d9d9;/*color di grigio lo sfondo*/
+}
+
+.navigation .icon {
+	/*invisibile*/
+	display: none;
+}
+
+/*funziona solo se la dimensione dello schermo è minore di 768 */
+@media screen and (max-width: 768px) {
+	/*per ridimensionare automaticamente la barra di navigazione */
+	.navigation a:not(.home) {
+		display: none;/*appare solo home*/
+	}
+	.navigation a.icon {
+		float: right;
+		display: block;/*appare anche le 3 lineette a sinistra*/
+	}
+	.navigation{
+		width:auto;
+		padding: 0;
+		margin-bottom:0;
+		height:60px;
+	}
+	.alto{
+		width: 100%;
+	}
+	
+	/*quando premo le 3 lineette come diventa (dato che con javascript gli aggiungo una classe)(appaiono solo quando la finestra  troppo stretta)*/
+	.navigation.responsive {
+		position: relative;
+		height:auto;
+	}
+	.navigation.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navigation.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+body {
+    padding-left: 40px;
+    padding-right: 40px;
+	font-family: "Times New Roman", Times, serif;
+    font-size: 28px; 
+	background: url("../immagini/sfondo.jpg") no-repeat fixed center; 
+}
+
+/*tutta la parte in cui metto le cose*/
+.contenuto{
+    border-left: 20px;
+    border-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+	height:100%;
+	background-color: #f2f2f2;
+	opacity:0.8;
+	margin-bottom:0;
+    overflow: auto;
+}
+
+/*parte bassa delle pagine*/
+footer{
+	bottom:0;
+	background-color: #d9d9d9;
+	padding:20px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:100;
+	border-top: 1px solid black;
+}
+
+/*icona*/
+.icona{
+	width:42px;
+	height:42px;
+	border:0;
+}
+
+/*trasforma in cerchio quello che ha questa classa*/
+.cerchio{
+	width: auto;
+	height:auto;
+	max-width:595px;
+	max-height:360px;
+    -moz-border-radius: 100%; /*mozilla*/
+    -webkit-border-radius:100%;/*safari*/
+    border-radius: 100%;
+}
+
+/*impostazione della tabella nella agina biografia*/
+.tabella{
+	border-collapse: collapse;
+    width: 100%;
+}
+.tabella td,th,tr{
+	padding-left:10px;
+	padding-right:10px;
+
+}
+.tabella td,th{
+    text-align: center;
+}
+
+.tabella tr:not(.oro):hover {
+	background-color:#bfbfbf;
+}
+
+/* coloro in oro*/ 
+.oro{
+	color:#b37700;
+}
+ 
+/*le parole in grassetto le coloro in oro*/ 
+b{
+    color:#b37700;
+}

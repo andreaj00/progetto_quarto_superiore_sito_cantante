@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--caratteri usati-->
+<meta charset="UTF-8">
+<!--icona in alto vicino al titolo-->
+<link rel="icon" href="immagini/icona.ico" />
+<!--titolo-->
+<title>Bruno Mars</title>
+<!--fogli css da cui prendere informazioni-->
+<link rel="stylesheet" type="text/css" href="stili/stile.css">
+<link rel="stylesheet" type="text/css" href="stili/console.css">
+<link rel="stylesheet" type="text/css" href="stili/slider.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--link da cui prendo l'icona-->
+</head>
+
+<!--barra di navigazione-->
+<body>
+<div class = "menu">
+	<img class="alto" src="immagini/sopra.jpg" alt="immagine non trovata">
+	<ul class = "navigation" id="daRidimensionare">
+		<li><a class="home active">Home</a></li>
+		<li><a href="biografia.html">Biografia</a></li>
+		<li><a href="discografia.html">Discografia</a></li>
+		<li><a href="canzoni.html">Canzoni</a></li>
+		<li><a href="concerti.html">Concerti</a></li>
+		<li><a class="icon" onclick="ridimensiona()">&#9776;</a></li><!--3 lineette che compaiono quando la barra è tropppo piccola-->
+	</ul>
+</div>
+
+<div class="contenuto" style="overflow-x:auto">
+
+	<table align="center">
+		<!--prima riga con titolo della tabella-->
+		<tr class="oro">
+			<th colspan="2"><center><h2>LE PIU' BELLE FRASI DI BRUNO MARS</h2></center></th>
+		</tr>
+		
+		<!--seconda riga con immagine e frase-->
+		<tr>
+			<td align="right" >
+				<img id="bruno1" class="cerchio" src="immagini/bruno1.jpg" alt="immagine non trovata" onmouseover="ascolta(this)" onmouseout="fermaAscolta(this)"/>
+				<div class="racchiude">
+					<!--console per sentire la musica-->
+					<div id="1" class="console" onmouseover="ascolta(bruno1)">
+						<!--play-->
+						<div id="1play" class="console play">
+							<div class="fa fa-play-circle-o" onclick="starta(1)"></div>
+						</div>
+						<!--pausa-->
+						<div id="1pause" class="console pause">
+							<div class="fa fa-pause-circle-o" onclick="pausa(1)"></div>
+						</div>
+						<!--audio-->
+						<audio id="1audio">
+						<source src="musica/Just the Way You Are.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+						</audio>
+						<!--slider-->
+						<input class="slider" type="range" min="0" max="100" value="0" id="1slider" onchange="skip(1)" style="width:250px">
+					</div>	
+				</div>	
+			</td>
+			<td><p><cite>"When I see your face<br> There's not a thing that I would change<br>
+				'Cause you're amazing<br>Just the way you are"<br>(Just The Way You Are)</cite></p>
+			</td> 
+			<!--contiene la console inoltre se lo schermo diventa minore di 630px questo div sparisce -->
+						
+		</tr>
+		
+		<!--terza riga con immagine e frase-->
+		<tr>
+			<td align="right" ><cite>"That I should've bought you flowers<br>And held your hand<br>
+				Should've gave you all my hours<br>When I had the chance"<br>(When I Was Your Man)</cite>
+			</td>
+			<td><img id="bruno2" class="cerchio" src="immagini/bruno2.jpg" alt="immagine non trovata" onmouseover="ascolta(this)" onmouseout="fermaAscolta(this)"/>
+			<!--contiene la console inoltre se lo schermo diventa minore di 630px questo div sparisce -->
+			<div class="racchiude2">
+				<!--console per sentire la musica-->
+				<div id="2" class="console" onmouseover="ascolta(bruno2)">
+					<!--play-->
+					<div id="2play" class="console play">
+						<i class="fa fa-play-circle-o" onclick="starta(2)"></i>
+					</div>
+					<!--pausa-->
+					<div id="2pause" class="console pause">
+						<i class="fa fa-pause-circle-o" onclick="pausa(2)"></i>
+					</div>
+					<!--audio-->
+					<audio id="2audio">
+					<source src="musica/When I Was Your Man.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+					<!--slider-->
+					<input class="slider" type="range" min="0" max="100" value="0" id="2slider" onchange="skip(2)" style="width:250px">
+				</div>	
+			</div>	
+			</td>
+		</tr>
+		
+		<!--quarta riga con immagine e frase-->
+		<tr>
+			<td align="right" >
+			<img id="bruno3" class="cerchio" src="immagini/bruno3.jpg" alt="immagine non trovata" onmouseover="ascolta(this)" onmouseout="fermaAscolta(this)"/>
+			<!--contiene la console inoltre se lo schermo diventa minore di 630px questo div sparisce -->
+			<div class="racchiude">
+				<!--console per sentire la musica-->
+				<div id="3" class="console" onmouseover="ascolta(bruno3)">
+					<!--play-->
+					<div id="3play" class="console play">
+						<i class="fa fa-play-circle-o" onclick="starta(3)"></i>
+					</div>
+					<!--pausa-->
+					<div id="3pause" class="console pause">
+						<i class="fa fa-pause-circle-o" onclick="pausa(3)"></i>
+					</div>
+					<!--audio-->
+					<audio id="3audio">
+					<source src="musica/Too Good To Say Goodbye.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+					<!--slider-->
+					<input class="slider" type="range" min="0" max="100" value="0" id="3slider" onchange="skip(3)" style="width:250px">
+				</div>	
+			</div>	
+			</td>
+			<td><cite>Ain't nobody gonna love me like the way you do
+				<br> And you ain't never gonna find a love like mine<br>(Too Good To Say Goodbye)</cite>
+			</td>
+			
+		</tr>
+		
+		<!--quinta riga con immagine e frase-->
+		<tr>
+			<td align="right" ><cite>"Don't fight the feeling,<br> invite the feeling"<br>(24k magic)</cite></td>
+			<td><img id="bruno4" class="cerchio" src="immagini/bruno4.jpg" alt="immagine non trovata" onmouseover="ascolta(this)" onmouseout="fermaAscolta(this)"/>
+			<!--contiene la console inoltre se lo schermo diventa minore di 630px questo div sparisce -->
+			<div class="racchiude2">
+				<!--console per sentire la musica-->
+				<div id="4" class="console" onmouseover="ascolta(bruno4)">
+					<!--play-->
+					<div id="4play" class="console play">
+						<i class="fa fa-play-circle-o" onclick="starta(4)"></i>
+					</div>
+					<!--pausa-->
+					<div id="4pause" class="console pause">
+						<i class="fa fa-pause-circle-o" onclick="pausa(4)"></i>
+					</div>
+					<!--audio-->
+					<audio id="4audio">
+					<source src="musica/24k magic.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+					<!--slider-->
+					<input class="slider" type="range" min="0" max="100" value="0" id="4slider" onchange="skip(4)" style="width:250px">
+				</div>	
+			</div>	
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!--parte bassa con tutti i social di bruno mars-->
+<footer><center>
+	<span>Segui Bruno Mars su:</span>
+	<!--youtube-->
+	<span><a href="https://www.youtube.com/channel/UCoUM-UJ7rirJYP8CQ0EIaHA" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/youtube.jpg" alt="youtube" title="youtube">
+	</a></span>
+	<!--spotify-->
+	<span><a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C#_=_" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/spotify.jpg" alt="spotify" style="width:42px;height:42px;border:0" title="spotify">
+	</a></span>
+	<!--itunes-->
+	<span><a href="https://itunes.apple.com/it/artist/bruno-mars/278873078" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/itunes.jpg" alt="itunes" style="width:42px;height:42px;border:0" title="itunes">
+	</a></span>
+	<!--facebook-->
+	<span><a href="https://www.facebook.com/brunomars/" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/facebook.jpg" alt="facebook" style="width:42px;height:42px;border:0" title="facebook">
+	</a></span>
+	<!--twitter-->
+	<span><a href="https://twitter.com/brunomars" target="_blank" style="text-decoration:none;">
+		<img class="icona" src="immagini/twitter.jpg" alt="twitter" title="twitter">
+	</a></span>
+	<!--instagram-->
+	<span><a href="https://www.instagram.com/brunomars/?hl=it" target="_blank" style="text-decoration:none;">
+		<img class="cerchio" src="immagini/instagram.jpg" alt="instagram" style="width:42px;height:42px;border:0" title="instagram">
+	</a></span>
+</center></footer>
+
+<script>
+<!--aggiungo anche i casi in cui la canzone sia finita e inoltre sincronizzo anche lo slider-->
+document.getElementById("1audio").addEventListener("ended",f1);
+document.getElementById("1audio").addEventListener("timeupdate",a1);
+document.getElementById("2audio").addEventListener("ended",f2);
+document.getElementById("2audio").addEventListener("timeupdate",a2);
+document.getElementById("3audio").addEventListener("ended",f3);
+document.getElementById("3audio").addEventListener("timeupdate",a3);
+document.getElementById("4audio").addEventListener("ended",f4);
+document.getElementById("4audio").addEventListener("timeupdate",a4);
+
+<!--funzioni che mi richiamano altre funzioni devo fare cosi perchè non posso passare i parametri nell'action listener-->
+/*
+var acc = document.getElementsByClassName("audiox");
+<!--aggiungo anche i casi in cui la canzone sia finita e inoltre sincronizzo anche lo slider-->
+for (var i = 0; i < 4; i++) {
+	acc[i].addEventListener("ended", function(i) {
+		finito(i+1);
+	});
+	acc[i].addEventListener("timeupdate", function(i) {
+		aggiorna(i+1);
+	});
+}*/
+<!--e perchè mi da errore se uso una funzione anonima (quella sopra)-->
+function f1(){
+	finito(1);
+}
+function a1(){
+	aggiorna(1);
+}
+function f2(){
+	finito(2);
+}
+function a2(){
+	aggiorna(2);
+}
+function f3(){
+	finito(3);
+}
+function a3(){
+	aggiorna(3);
+}
+function f4(){
+	finito(4);
+}
+function a4(){
+	aggiorna(4);
+}
+
+<!--faccio apparire la console-->
+function ascolta(ev){
+	var id=ev.id;
+	var n=id.replace("bruno","");
+	<!--lo faccio comparire-->
+	document.getElementById(n).style.display="block";
+	<!--se non è in pausa metto play-->
+	if(document.getElementById(n+"pause").style.display!=="block"){
+		document.getElementById(n+"play").style.display="block";
+	}
+	var mus=document.getElementById(n+"audio");
+}
+
+<!--faccio scomparire la console-->
+function fermaAscolta(ev){
+	var id=ev.id;
+	var n=id.replace("bruno","");
+	document.getElementById(n).style.display="none";
+}
+
+<!--faccio cominciare la musica-->
+function starta(n){
+	var mus=document.getElementById(n+"audio");
+	<!--fermo tutte le altre musiche-->
+	for(var i=1;i<5;i++){
+		pausa(i);
+	}
+	<!--faccio cominciare la musica-->
+	mus.play();
+	document.getElementById(n+"play").style.display="none";
+	document.getElementById(n+"pause").style.display="block";
+	
+	
+}
+<!--faccio fermare la musica-->
+function pausa(n){
+	var mus=document.getElementById(n+"audio");
+	mus.pause();
+	document.getElementById(n+"play").style.display="block";
+	document.getElementById(n+"pause").style.display="none";
+	
+}
+<!--nel caso in cui la canzone sia finita-->
+function finito(n){
+	<!--cambio in play-->
+	document.getElementById(n+"play").style.display="block";
+	document.getElementById(n+"pause").style.display="none";
+	<!--azzero lo slider-->
+	document.getElementById(n+"slider").value=0;
+}
+<!--nel caso in cui la canzone sia finita-->
+function aggiorna(n){
+	var mus=document.getElementById(n+"audio");
+	<!--aggiorno il valore dello slider-->
+	document.getElementById(n+"slider").value=mus.currentTime*100/mus.duration;
+}	
+
+<!--nel caso in cui si salti la canzone con lo slider-->
+function skip(n){
+	var slider=document.getElementById(n+"slider");
+	<!--aggiorno il valore dello slider-->
+	var mus=document.getElementById(n+"audio");
+	mus.currentTime=slider.value*mus.duration/100;
+}	
+<!--Usato per ridimensionare la barra di navigazione -->
+function ridimensiona() {
+    var x = document.getElementById("daRidimensionare");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+</script>
+</body>
+</html>

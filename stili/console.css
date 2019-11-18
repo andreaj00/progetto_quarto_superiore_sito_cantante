@@ -1,0 +1,48 @@
+/*come sono fatte le varie console*/
+.console{
+	display:none;
+	z-index:10;
+	margin-top:0;
+	position: absolute;
+	margin-top:-150px;
+	margin-left:110px;
+}
+
+
+.fa.fa-play-circle-o{
+	font-size:150px;
+	height:150px;
+	width:150px;
+	color:#b37700;
+}
+.fa.fa-pause-circle-o{
+	font-size:150px;
+	height:150px;
+	width:150px;
+	color:#b37700;
+}
+
+.racchiude{
+	display:block;
+}
+
+/*quando lo schermo diventa troppo stretto*/
+/*disattivo le console delle immagini a destra*/
+@media screen and (max-width: 630px) {
+	.racchiude{
+		display:none;
+	}
+}
+
+/*quando lo schermo diventa troppo stretto*/
+/*disattivo le console delle imamgini a destra*/
+@media screen and (max-width: 1250px) {
+	.racchiude2{
+		display:none;
+	}
+}
+
+.slider{
+	margin-top:20px;
+	margin-left:60px;
+}

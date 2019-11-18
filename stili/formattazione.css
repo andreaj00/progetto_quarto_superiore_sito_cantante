@@ -1,0 +1,76 @@
+
+/*caratteristiche della parte a sinistra usata per la formattazione del testo*/
+.sinistra{
+    margin: 0;
+	margin-top:0;
+    padding: 10px;
+    width: 200px;
+    overflow: auto;
+    position: fixed;
+    height: 100%;
+    background: #cccccc;
+	border-right-style: solid;
+}
+
+.rimpicciolisci{
+	height:50px;
+    width: 25px;
+	margin-left:222px;
+	margin-top:28%;
+    overflow: hidden;
+	z-index:1;
+    position: fixed;
+}
+.ingrandisci{
+	height:50px;
+    width: 25px;
+	margin-left:0;
+	margin-top:28%;
+    overflow: hidden;
+	z-index:1;
+    position: fixed;
+	display:none;
+}
+/*in questa pagina il contenuto sta a destra perchè a sinistra ci stanno le impostazioni per la formatazione*/
+.contenuto{
+	margin-left:222px;
+	height:100%; 
+	min-height:750px;
+}
+/*quando lo schermo diventa troppo stretto*/
+/*cancello tutta la parte per la formattazione*/
+@media screen and (max-width: 630px) {
+	.sinistra {
+		display:none
+	}
+	.rimpicciolisci{
+		display:none
+	}
+	.ingrandisci{
+		display:none
+	}
+	.contenuto{
+		margin-left:0;
+	}
+}
+/*quando lo schermo diventa troppo basso*/
+/*cancello tutta la parte per la formattazione*/
+@media screen and (max-height: 750px) {
+	.sinistra {
+		display:none
+	}
+	.rimpicciolisci{
+		display:none
+	}
+	.ingrandisci{
+		display:none
+	}
+	.contenuto{
+		margin-left:0;
+	}
+}
+
+/*parte bassa con i segui*/
+.basso{
+	margin-left:222px;
+}
